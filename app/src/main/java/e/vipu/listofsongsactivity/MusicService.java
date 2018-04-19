@@ -29,7 +29,7 @@ public class MusicService extends Service{
             mediaPlayer.setLooping(true);
             //starts or resumes the playback
             mediaPlayer.start();
-
+            Log.d("music", "onStartCommand: in music service");
         } catch (IOException e) {
             e.printStackTrace();
             Log.i("show","Error: "+e.toString());
